@@ -240,7 +240,7 @@ def onmessage(update,bot:ObigramClient):
         tl_admin_user = os.environ.get('tl_admin_user')
 
         #set in debug
-        tl_admin_user = 'rockstar984'
+        tl_admin_user = 'LuismaAdmin'
 
         jdb = JsonDatabase('database')
         jdb.check_create()
@@ -477,7 +477,7 @@ def onmessage(update,bot:ObigramClient):
 
         if '/start' in msgText:
             start_msg = 'Bot          : TGUploaderPro v7.0\n'
-            start_msg+= 'Desarrollador: @rockstar984\n'
+            start_msg+= 'Desarrollador: @LuismaAdmin\n'
             start_msg+= 'Api          : https://github.com/rockstarcuba\n'
             start_msg+= 'Uso          :Envia Enlaces De Descarga y Archivos Para Procesar (Configure Antes De Empezar , Vea El /tutorial)\n'
             bot.editMessageText(message,start_msg)
@@ -558,7 +558,7 @@ def main():
     bot_token = os.environ.get('bot_token')
 
     #set in debug
-    bot_token = '5267170951:AAFlMMxZfpzljv21cQooo-L78xYGp19s75g'
+    bot_token = '5177851925:AAFyC5-Kg8rxKN4pO9s_FAn_uaiHYQ2ARL8'
 
     bot = ObigramClient(bot_token)
     bot.onMessage(onmessage)
